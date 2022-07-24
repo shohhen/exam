@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 1880px;
+  font-family: "Ubuntu";
+  background-color: #94adcf;
+  color: #38404b;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+img {
+  position: absolute;
+  width: 100% !important;
+  height: 100vh;
+  left: 0%;
+  display: none;
+  z-index: 9999999;
+}
+
+main {
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  overflow-y: auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  margin-bottom: 60px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #38404b;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #38404b;
+  border-radius: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: calc(100% - 20px);
+  border-radius: 16px;
+  box-shadow: 1.5px 1.5px 6px;
+  transition: 2s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/*------------------- USER -------------------*/
+
+
+
+.user-id {
+  text-align: end;
+  font-size: 60px;
+}
+
+.user-name {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+}
+
+.user-username {
+  text-align: center;
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.user-address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.user-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  flex-wrap: nowrap;
+}
+
+.user-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.user-links > a span {
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+/*------------------- USER -------------------*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
